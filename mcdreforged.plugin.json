@@ -1,0 +1,17 @@
+{
+    "id": "cushion_of_backup",
+    "version": "1.0.0",
+    "name": "Cushion of Backup",
+    "description": "优化服务器回档/重启时的玩家处理逻辑，让玩家游戏体验连贯顺畅",
+    "author": "HeTao_yz",
+    "link": "https://github.com/HeTao-yz/Cushion-of-Backup",
+    "dependencies": {
+        "mcdreforged": ">=2.0.0"
+    },
+    "resources": [
+        "LICENSE"
+    ]
+}
+
+
+
