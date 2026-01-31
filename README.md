@@ -1,5 +1,7 @@
 # Cushion of Backup - 回档缓冲垫
 
+[English]([Cushion-of-Backup/README_EN.md at main · HeTao-yz/Cushion-of-Backup](https://github.com/HeTao-yz/Cushion-of-Backup/blob/main/README_EN.md))
+
 优化服务器回档/重启时的玩家处理逻辑，让玩家游戏体验连贯顺畅
 
 ## 前言
