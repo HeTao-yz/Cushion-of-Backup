@@ -18,7 +18,6 @@ def get_lobby_player() -> list:
     player_list = player_line.split(', ')
     return player_list
 
-@new_thread
 def send_player():
     """
     将玩家自动转发到指定的服务器
