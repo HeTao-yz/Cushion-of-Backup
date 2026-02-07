@@ -1,4 +1,4 @@
-# Cushion of Backup - 回档缓冲垫
+# Cushion of Backup - 回档缓冲
 
 [English](https://github.com/HeTao-yz/Cushion-of-Backup/blob/main/README_EN.md)
 
