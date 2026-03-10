@@ -15,9 +15,6 @@ def messages(status:str)->str:
 
 def on_load(server: PluginServerInterface, prev_module):
     initialize_config(server)
-    server.register_event_listener(on_server_start)
-    server.register_event_listener(on_server_startup)
-    server.register_event_listener(on_server_stop)
 
 def on_server_start(server: PluginServerInterface):
     send_rcon_command(server, messages('starting'))

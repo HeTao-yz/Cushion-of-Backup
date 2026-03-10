@@ -1,6 +1,6 @@
+import re
 from rcon.source import Client
 from .config import *
-from time import sleep
 
 def vc_rcon_send_command(command:str) -> str:
     """发送RCON命令到Velocity服务器"""
@@ -15,7 +15,9 @@ def get_lobby_player() -> list:
     start = response.find(f'[{config.lobby_server}]')
     over = response[start:].find('\n')
     player_line = response[start:start+over][response[start:start+over].find(': ')+2:]
-    player_list = player_line.split(', ')
+    
+    player_list = [re.sub(r'§.', '', p).strip() for p in player_line.split(', ')]
+    
     return player_list
 
 def send_player():
@@ -26,5 +28,3 @@ def send_player():
     player_list = get_lobby_player()
     for player in player_list:
         vc_rcon_send_command(f'send {player} {config.survival_server}')
-
-
